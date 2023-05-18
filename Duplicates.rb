@@ -5,6 +5,8 @@
 
 def find_duplicates(arr)
     # Your code here
+    
+    arr.select {|element| arr.count(element)>1 }.uniq
 end
   
 # Example usage
